@@ -14,7 +14,7 @@ import { CartService, Cart } from './services/cart.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'TechStore - Tu Tienda de Tecnología';
+  title = 'tienda don res';
   productos: Product[] = [];
   carrito: Cart | null = null;
   loading = true;
@@ -110,9 +110,9 @@ export class AppComponent implements OnInit {
 
   // Vaciar el carrito
   vaciarCarrito(): void {
-    if (confirm('¿Estás seguro de vaciar el carrito?')) {
+    if (confirm('¿Estás seguro de vaciar el carrito super wow?')) {
       this.cartService.clearCart().subscribe({
-        next: () => console.log('Carrito vaciado'),
+        next: () => console.log('Carrititito vaciado'),
         error: (err) => console.error('Error al vaciar:', err)
       });
     }
